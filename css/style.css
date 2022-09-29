@@ -599,7 +599,7 @@ p {
 @media only screen and (max-width:360px){
     .contenedor-selecciones{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         width: 25%;
     }
     .titulo-selecciones{
@@ -607,5 +607,26 @@ p {
     }
      .grupo-titulo h1{
     font-size: 16px;
+    }
+}
+/* ESTADIOS RESPONSIVE */
+@media only screen and (max-width:768px){
+    .contenedor-estadios{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 50%;
+    }
+    .contenedor-pelota{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 50%;
+    }
+    
+}
+@media only screen and (max-width:360px){
+    .contenedor-estadios{
+        display: grid;
+        grid-template-columns:auto;
+        width: 25%;
     }
 }
