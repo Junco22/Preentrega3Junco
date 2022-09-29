@@ -68,186 +68,6 @@ li a:hover {
     display: none;
 }
 
-@media only screen and (max-width: 375px) {
-    .menu {
-        position: sticky;
-        z-index: 100;
-        top: -1px;
-    }
-
-    .checkbox {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #3c0115;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 300ms ease;
-        z-index: 100;
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-
-    }
-
-    li a:hover {
-        background-color: #630422;
-    }
-
-    #check:checked~ul {
-        left: 0;
-
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    .menu {
-        position: sticky;
-        z-index: 100;
-        top: -1px;
-    }
-
-    .checkbox {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #3c0115;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 300ms ease;
-        z-index: 100;
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-
-    }
-
-    li a:hover {
-        background-color: #630422;
-    }
-
-    #check:checked~ul {
-        left: 0;
-
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .menu {
-        position: sticky;
-        z-index: 100;
-        top: -1px;
-    }
-
-    .checkbox {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #3c0115;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 300ms ease;
-        z-index: 100;
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-
-    }
-
-    li a:hover {
-        background-color: #630422;
-    }
-
-    #check:checked~ul {
-        left: 0;
-
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .menu {
-        position: sticky;
-        z-index: 100;
-        top: -1px;
-    }
-
-    .checkbox {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #3c0115;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 300ms ease;
-        z-index: 100;
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-
-    }
-
-    li a:hover {
-        background-color: #630422;
-    }
-
-    #check:checked~ul {
-        left: 0;
-
-    }
-}
-
 /* CUERPO INDEX*/
 .titulo-index {
     color: white;
@@ -422,79 +242,6 @@ button:hover {
     font-size: 15px;
 }
 
-@media only screen and (max-width:768px) {
-    .pie-pagina .grupo-1 {
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .redes {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .pie-pagina .grupo-1 .box h2 {
-        color: #fff;
-        margin-bottom: 10px;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .pie-pagina .grupo-1 .box p {
-        color: #fff;
-        margin-bottom: 10px;
-        font-size: 12px;
-    }
-
-    .box figure a img {
-        width: 100px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .pie-pagina .grupo-1 {
-        width: 25%;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        justify-content: center;
-    }
-
-    .redes {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    .pie-pagina .grupo-1 {
-        width: 25%;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        justify-content: center;
-    }
-
-    .redes {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .pie-pagina .grupo-1 {
-        width: 25%;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        justify-content: center;
-    }
-
-    .redes {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 /* SELECCIONES */
 .contenedor-selecciones {
     display: grid;
@@ -545,60 +292,7 @@ button:hover {
     font-size: 16px;
 }
 
-@media only screen and (max-width:768px) {
-    .contenedor-selecciones {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        width: 50%;
-    }
 
-    .grupos img {
-        width: 125px;
-        height: 125px;
-    }
-
-    .grupo-titulo h1 {
-        font-size: 16px;
-    }
-
-}
-
-@media only screen and (max-width:360px) {
-    .contenedor-selecciones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 25%;
-    }
-
-    .titulo-selecciones {
-        font-size: 25px;
-    }
-}
-
-@media only screen and (max-width:425px) {
-    .contenedor-selecciones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 25%;
-    }
-
-    .titulo-selecciones {
-        font-size: 25px;
-    }
-}
-
-@media only screen and (max-width:375px) {
-    .contenedor-selecciones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 25%;
-    }
-
-    .titulo-selecciones {
-        font-size: 25px;
-    }
-}
 
 /* FIXTURE */
 .titulo {
@@ -756,77 +450,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-@media only screen and (max-width: 768px) {
-    .contenedor-estadios {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        width: 50%;
-    }
-
-    .contenedor-pelota {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        width: 50%;
-    }
-
-    .titulo-estadios {
-        background-color: rgba(0, 0, 0, .3);
-        border-radius: 20px;
-        color: white;
-        font-size: 36px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .contenedor-estadios {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        width: 25%;
-    }
-
-    .contenedor-pelota {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        width: 25%;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    .contenedor-estadios {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        width: 25%;
-    }
-
-    .contenedor-pelota {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        width: 25%;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .contenedor-estadios {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        width: 25%;
-    }
-
-    .contenedor-pelota {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        width: 25%;
-    }
-}
-
 /* NOTICIAS */
 
 .contenedor-noticias h1 {
@@ -864,4 +487,171 @@ p {
 .contenedor-noticias a:hover {
     color: cornflowerblue;
 
+}
+
+/* MENU RESPONSIVE */
+
+@media only screen and (max-width:768px) {
+    header {
+        position: sticky;
+        z-index: 100;
+        top: -1px;
+    }
+
+    .checkbox {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #3c0115;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 300ms ease;
+        z-index: 100;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+
+    li a:hover {
+        background-color: #630422;
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+}
+
+/* PIE DE PAGINA RESPONSIEVE */
+@media only screen and (max-width:768px) {
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .box figure a img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .pie-pagina .grupo-1 {
+        width: 25%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+    }
+}
+/* SELECCIONES RESPONSIVE */
+
+@media only screen and (max-width:768px) {
+    .contenedor-selecciones {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        width: 50%;
+    }
+
+    .grupos img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .grupo-titulo h1 {
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width:360px){
+    .contenedor-selecciones {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 25%;
+    }
+
+    .titulo-selecciones {
+        font-size: 25px;
+    }
+}
+/* ESTADIOS RESPONSIVE */
+
+@media only screen and (max-width: 768x) {
+    .contenedor-estadios {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        width: 50%;
+    }
+
+    .contenedor-pelota {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        width: 50%;
+    }
+
+    .titulo-estadios {
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 20px;
+        color: white;
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .contenedor-estadios {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+
+    .contenedor-pelota {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+    .titulo-estadios {
+        font-size: 20px;
+    }
 }
