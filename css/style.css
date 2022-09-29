@@ -290,8 +290,6 @@ button:hover {
 .pie-pagina .grupo-1 .box figure img {
     display: flex;
     flex-direction: column;
-    width: 250px;
-
 }
 
 .pie-pagina .grupo-1 .box h2 {
@@ -344,6 +342,21 @@ button:hover {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+    .pie-pagina .grupo-1 .box h2 {
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .pie-pagina .grupo-1 .box p {
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .box figure a img {
+        width: 100px;
     }
 }
 @media screen and (max-width: 360px) {
