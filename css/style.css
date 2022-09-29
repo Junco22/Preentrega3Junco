@@ -67,6 +67,52 @@ li a:hover {
 #check {
     display: none;
 }
+
+@media only screen and (max-width: 375px) {
+    .menu {
+        position: sticky;
+        z-index: 100;
+        top: -1px;
+    }
+
+    .checkbox {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #3c0115;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 300ms ease;
+        z-index: 100;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+
+    li a:hover {
+        background-color: #630422;
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .menu {
         position: sticky;
@@ -156,6 +202,7 @@ li a:hover {
 
     }
 }
+
 @media screen and (max-width: 768px) {
     .menu {
         position: sticky;
@@ -380,28 +427,32 @@ button:hover {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .redes{
+
+    .redes {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
+
     .pie-pagina .grupo-1 .box h2 {
         color: #fff;
         margin-bottom: 10px;
         font-size: 16px;
         text-align: center;
     }
-    
+
     .pie-pagina .grupo-1 .box p {
         color: #fff;
         margin-bottom: 10px;
         font-size: 12px;
     }
+
     .box figure a img {
         width: 100px;
     }
 }
+
 @media screen and (max-width: 360px) {
     .pie-pagina .grupo-1 {
         width: 25%;
@@ -409,11 +460,13 @@ button:hover {
         align-items: center;
         justify-content: center;
     }
-    .redes{
+
+    .redes {
         display: flex;
         flex-direction: row;
     }
 }
+
 @media screen and (max-width: 425px) {
     .pie-pagina .grupo-1 {
         width: 25%;
@@ -421,12 +474,26 @@ button:hover {
         align-items: center;
         justify-content: center;
     }
-    .redes{
+
+    .redes {
         display: flex;
         flex-direction: row;
     }
 }
 
+@media screen and (max-width: 375px) {
+    .pie-pagina .grupo-1 {
+        width: 25%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 /* SELECCIONES */
 .contenedor-selecciones {
@@ -481,40 +548,57 @@ button:hover {
 @media screen and (max-width:768px) {
     .contenedor-selecciones {
         display: grid;
-        grid-template-columns: repeat(4 ,1fr) ;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         width: 50%;
     }
-    .grupos img{
+
+    .grupos img {
         width: 125px;
         height: 125px;
     }
+
     .grupo-titulo h1 {
         font-size: 16px;
     }
 
 }
+
 @media screen and (max-width:360px) {
     .contenedor-selecciones {
         display: grid;
-        grid-template-columns:repeat(2 ,1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 25%;
     }
-    .titulo-selecciones {
-        font-size: 25px;
-    }
-}
-@media screen and (max-width:425px) {
-    .contenedor-selecciones {
-        display: grid;
-        grid-template-columns:repeat(2 ,1fr);
-        width: 25%;
-    }
+
     .titulo-selecciones {
         font-size: 25px;
     }
 }
 
+@media screen and (max-width:425px) {
+    .contenedor-selecciones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 25%;
+    }
+
+    .titulo-selecciones {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .contenedor-selecciones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 25%;
+    }
+
+    .titulo-selecciones {
+        font-size: 25px;
+    }
+}
 
 /* FIXTURE */
 .titulo {
@@ -676,7 +760,7 @@ input[type=number]::-webkit-outer-spin-button {
     .contenedor-estadios {
         display: grid;
         grid-template-columns: auto auto;
-        grid-template-rows:auto;
+        grid-template-rows: auto;
         width: 50%;
     }
 
@@ -686,6 +770,7 @@ input[type=number]::-webkit-outer-spin-button {
         grid-template-rows: auto;
         width: 50%;
     }
+
     .titulo-estadios {
         background-color: rgba(0, 0, 0, .3);
         border-radius: 20px;
@@ -693,13 +778,15 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 36px;
     }
 }
+
 @media screen and (max-width: 360px) {
     .contenedor-estadios {
         display: grid;
-        grid-template-columns:auto;
-        grid-template-rows:auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         width: 25%;
     }
+
     .contenedor-pelota {
         display: grid;
         grid-template-columns: auto;
@@ -707,13 +794,31 @@ input[type=number]::-webkit-outer-spin-button {
         width: 25%;
     }
 }
+
 @media screen and (max-width: 425px) {
     .contenedor-estadios {
         display: grid;
-        grid-template-columns:auto;
-        grid-template-rows:auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         width: 25%;
     }
+
+    .contenedor-pelota {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contenedor-estadios {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: 25%;
+    }
+
     .contenedor-pelota {
         display: grid;
         grid-template-columns: auto;
