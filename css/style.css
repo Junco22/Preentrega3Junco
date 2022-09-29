@@ -203,7 +203,7 @@ li a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .menu {
         position: sticky;
         z-index: 100;
@@ -422,7 +422,7 @@ button:hover {
     font-size: 15px;
 }
 
-@media screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
     .pie-pagina .grupo-1 {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
@@ -453,7 +453,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media only screen and (max-width: 360px) {
     .pie-pagina .grupo-1 {
         width: 25%;
         grid-template-columns: repeat(1, 1fr);
@@ -467,7 +467,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
     .pie-pagina .grupo-1 {
         width: 25%;
         grid-template-columns: repeat(1, 1fr);
@@ -481,7 +481,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .pie-pagina .grupo-1 {
         width: 25%;
         grid-template-columns: repeat(1, 1fr);
@@ -545,7 +545,7 @@ button:hover {
     font-size: 16px;
 }
 
-@media screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
     .contenedor-selecciones {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -564,7 +564,7 @@ button:hover {
 
 }
 
-@media screen and (max-width:360px) {
+@media only screen and (max-width:360px) {
     .contenedor-selecciones {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -576,7 +576,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width:425px) {
+@media only screen and (max-width:425px) {
     .contenedor-selecciones {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -588,7 +588,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width:375px) {
+@media only screen and (max-width:375px) {
     .contenedor-selecciones {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -756,7 +756,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .contenedor-estadios {
         display: grid;
         grid-template-columns: auto auto;
@@ -779,7 +779,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media only screen and (max-width: 360px) {
     .contenedor-estadios {
         display: grid;
         grid-template-columns: auto;
@@ -795,7 +795,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
     .contenedor-estadios {
         display: grid;
         grid-template-columns: auto;
@@ -811,7 +811,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .contenedor-estadios {
         display: grid;
         grid-template-columns: auto;
