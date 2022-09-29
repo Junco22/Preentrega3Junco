@@ -79,7 +79,7 @@ li a:hover {
 .contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
     gap: 20px;
 }
@@ -246,7 +246,7 @@ button:hover {
 .contenedor-selecciones {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 40px;
     gap: 20px;
@@ -267,7 +267,7 @@ button:hover {
 .grupos {
     cursor: pointer;
     background-color: #630422;
-    width: 90%;
+    width: 100%;
     padding-bottom: 15px;
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
@@ -354,7 +354,7 @@ input[type=number]::-webkit-outer-spin-button {
 .contenedor-estadios {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 40px;
     gap: 20px;
@@ -366,7 +366,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 40px;
     gap: 20px;
@@ -568,9 +568,9 @@ p {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 360px) {
     .pie-pagina .grupo-1 {
-        width: 25%;
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
@@ -583,75 +583,29 @@ p {
 }
 /* SELECCIONES RESPONSIVE */
 
-@media only screen and (max-width:768px) {
-    .contenedor-selecciones {
+@media only screen and (max-width:768px){
+    .contenedor-selecciones{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
+        grid-template-columns: auto auto;
         width: 50%;
     }
-
-    .grupos img {
-        width: 125px;
-        height: 125px;
+    .titulo-selecciones{
+        font-size: 36px;
     }
-
-    .grupo-titulo h1 {
-        font-size: 16px;
+     .grupo-titulo h1{
+    font-size: 22px;
     }
-
 }
 @media only screen and (max-width:360px){
-    .contenedor-selecciones {
+    .contenedor-selecciones{
         display: grid;
         grid-template-columns: auto auto;
         width: 25%;
     }
-
-    .titulo-selecciones {
-        font-size: 25px;
+    .titulo-selecciones{
+        font-size: 22px;
     }
-}
-/* ESTADIOS RESPONSIVE */
-
-@media only screen and (max-width: 768x) {
-    .contenedor-estadios {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        width: 50%;
-    }
-
-    .contenedor-pelota {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        width: 50%;
-    }
-
-    .titulo-estadios {
-        background-color: rgba(0, 0, 0, .3);
-        border-radius: 20px;
-        color: white;
-        font-size: 36px;
-    }
-}
-
-@media only screen and (max-width:360px){
-    .contenedor-estadios {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        width: 100%;
-    }
-
-    .contenedor-pelota {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        width: 100%;
-    }
-    .titulo-estadios {
-        font-size: 20px;
+     .grupo-titulo h1{
+    font-size: 16px;
     }
 }
