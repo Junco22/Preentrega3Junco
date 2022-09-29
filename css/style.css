@@ -67,9 +67,52 @@ li a:hover {
 #check {
     display: none;
 }
+@media only screen and (max-width: 425px) {
+    .menu {
+        position: sticky;
+        z-index: 100;
+        top: -1px;
+    }
 
+    .checkbox {
+        display: block;
+    }
 
-@media screen and (max-width: 360px) {
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #3c0115;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 300ms ease;
+        z-index: 100;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+
+    li a:hover {
+        background-color: #630422;
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
     .menu {
         position: sticky;
         z-index: 100;
@@ -371,6 +414,18 @@ button:hover {
         flex-direction: row;
     }
 }
+@media screen and (max-width: 425px) {
+    .pie-pagina .grupo-1 {
+        width: 25%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 /* SELECCIONES */
@@ -440,6 +495,16 @@ button:hover {
 
 }
 @media screen and (max-width:360px) {
+    .contenedor-selecciones {
+        display: grid;
+        grid-template-columns:repeat(2 ,1fr);
+        width: 25%;
+    }
+    .titulo-selecciones {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:425px) {
     .contenedor-selecciones {
         display: grid;
         grid-template-columns:repeat(2 ,1fr);
@@ -629,6 +694,20 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 @media screen and (max-width: 360px) {
+    .contenedor-estadios {
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows:auto;
+        width: 25%;
+    }
+    .contenedor-pelota {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: 25%;
+    }
+}
+@media screen and (max-width: 425px) {
     .contenedor-estadios {
         display: grid;
         grid-template-columns:auto;
