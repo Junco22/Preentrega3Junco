@@ -567,7 +567,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
     .pie-pagina .grupo-1 {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
@@ -595,7 +595,7 @@ p {
     font-size: 22px;
     }
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:650px){
     .contenedor-selecciones{
         display: grid;
         grid-template-columns:auto;
@@ -631,7 +631,7 @@ p {
     }
     
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:650px){
     .contenedor-estadios{
         display: grid;
         grid-template-columns:auto;
