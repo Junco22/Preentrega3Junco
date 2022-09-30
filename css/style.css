@@ -52,7 +52,6 @@ nav ul li a {
 
 li a:hover {
     color:#3498db;
-   
     cursor: pointer;
 }
 
@@ -82,7 +81,6 @@ li a:hover {
 }
 .contenedor-cards{
     width: 100%;
-    max-width: 1200px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -475,11 +473,6 @@ p {
         font-size: 16px;
 
     }
-
-    li a:hover {
-        background-color: #630422;
-    }
-
     #check:checked~ul {
         left: 0;
 
@@ -549,7 +542,7 @@ p {
 @media only screen and (max-width:360px){
     .contenedor-selecciones{
         display: grid;
-        grid-template-columns:auto;
+        grid-template-columns:repeat(2 ,1fr);
         width: 25%;
     }
     .grupos{
