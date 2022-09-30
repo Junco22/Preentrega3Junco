@@ -482,6 +482,8 @@ p {
     .pie-pagina .grupo-1 {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
     }
 
     .redes {
@@ -508,20 +510,6 @@ p {
         width: 100px;
     }
 }
-
-@media screen and (max-width: 360px) {
-    .pie-pagina .grupo-1 {
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        justify-content: center;
-    }
-
-    .redes {
-        display: flex;
-        flex-direction: row;
-    }
-}
 /* SELECCIONES RESPONSIVE */
 
 @media only screen and (max-width:768px){
@@ -534,19 +522,17 @@ p {
     .titulo-selecciones{
         font-size: 36px;
     }
+    .escudos img{
+        width: 150px;
+            height: 150px;
+        }
      .grupo-titulo h1{
     font-size: 22px;
     }
 }
-@media only screen and (max-width:360px){
+@media only screen and (max-width:390px){
     .contenedor-selecciones{
-        display: grid;
-        grid-template-columns:repeat(2 ,1fr);
         width: 25%;
-    }
-    .grupos{
-        display: flex;
-        flex-direction: column;
     }
     .titulo-selecciones{
         font-size: 22px;
@@ -555,7 +541,7 @@ p {
         font-size: 16px;
     }
     .escudos img{
-        width: 150px;
+    width: 150px;
         height: 150px;
     }
 
@@ -574,9 +560,8 @@ p {
     }
     
 }
-@media only screen and (max-width:360px){
+@media only screen and (max-width:390px){
     .contenedor-estadios{
-        display: grid;
         grid-template-columns:auto;
         width: 25%;
     }
