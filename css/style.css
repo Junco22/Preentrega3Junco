@@ -529,7 +529,7 @@ p {
 
 /* SELECCIONES RESPONSIVE */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
 
     .contenedor-selecciones {
         display: grid;
@@ -549,10 +549,16 @@ p {
     .grupo-titulo h1 {
         font-size: 22px;
     }
+    .grupo-p p{
+        font-size: 16px;
+    }
+    
 }
 
 @media only screen and (max-width:390px) {
     .contenedor-selecciones {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         width: 25%;
     }
 
@@ -567,6 +573,9 @@ p {
     .escudos img {
         width: 150px;
         height: 150px;
+    }
+    .grupo-p {
+        font-size: 16px;
     }
 
 }
