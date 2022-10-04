@@ -9,11 +9,15 @@
 }
 
 body {
-    background-color:#0d2033;
+    background-color: #0d2033;
     width: 100%;
     height: 100%;
 }
+
 /* NAV MENU */
+header {
+    width: auto;
+}
 .menu {
     background-color: #630422;
     height: 80px;
@@ -50,7 +54,7 @@ nav ul li a {
 }
 
 li a:hover {
-    color:#3498db;
+    color: #3498db;
     cursor: pointer;
 }
 
@@ -78,7 +82,8 @@ li a:hover {
     padding: 20px;
     margin: 50px;
 }
-.contenedor-cards{
+
+.contenedor-cards {
     width: 100%;
     height: auto;
     display: flex;
@@ -86,7 +91,8 @@ li a:hover {
     justify-content: center;
     margin: auto;
 }
-.card{
+
+.card {
     background-color: #12263a;
     width: 330px;
     height: auto;
@@ -97,30 +103,40 @@ li a:hover {
     text-align: center;
     transition: all 0.25s;
 }
-.card:hover{
+
+.card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, .2);
 }
-.contenedor-cards .card img{
+
+.contenedor-cards .card img {
     width: 330px;
     height: 220px;
 }
-.contenedor-cards .card h2{
+
+.contenedor-cards .card h2 {
     color: white;
     font-size: 26;
 }
-.contenedor-cards .card p{
+
+.contenedor-cards .card p {
     padding: 0 10px;
     font-size: 18px;
     color: white;
 }
-.contenedor-cards .card a{
-    color:white;
+
+.contenedor-cards .card a {
+    color: white;
 }
-.contenedor-cards .card a:hover{
+
+.contenedor-cards .card a:hover {
     color: #3498db;
 }
+
 /* PIE DE PAGINA */
+footer {
+    width: 100%;
+}
 .pie-pagina {
     width: 100%;
     background-color: #0a141d;
@@ -224,7 +240,7 @@ li a:hover {
 
 .escudos {
     margin: 0 auto;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .grupo-titulo h1 {
@@ -435,9 +451,10 @@ p {
     color: cornflowerblue;
 
 }
+
 /* MENU RESPONSIVE */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
     header {
         position: sticky;
         z-index: 100;
@@ -471,6 +488,7 @@ p {
         font-size: 16px;
 
     }
+
     #check:checked~ul {
         left: 0;
 
@@ -478,7 +496,7 @@ p {
 }
 
 /* PIE DE PAGINA RESPONSIEVE */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
     .pie-pagina .grupo-1 {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
@@ -510,65 +528,92 @@ p {
         width: 100px;
     }
 }
+
 /* SELECCIONES RESPONSIVE */
 
-@media only screen and (max-width:768px){
-    
-    .contenedor-selecciones{
+@media only screen and (max-width:768px) {
+
+    .contenedor-selecciones {
         display: grid;
         grid-template-columns: auto auto;
         width: 50%;
     }
-    .titulo-selecciones{
+
+    .titulo-selecciones {
         font-size: 36px;
     }
-    .escudos img{
+
+    .escudos img {
         width: 150px;
-            height: 150px;
-        }
-     .grupo-titulo h1{
-    font-size: 22px;
+        height: 150px;
     }
-}
-@media only screen and (max-width:390px){
-    .contenedor-selecciones{
-        width: 25%;
-    }
-    .titulo-selecciones{
+
+    .grupo-titulo h1 {
         font-size: 22px;
     }
-     .grupo-titulo h1{
+}
+
+@media only screen and (max-width:390px) {
+    .contenedor-selecciones {
+        width: 25%;
+    }
+
+    .titulo-selecciones {
+        font-size: 22px;
+    }
+
+    .grupo-titulo h1 {
         font-size: 16px;
     }
-    .escudos img{
-    width: 150px;
+
+    .escudos img {
+        width: 150px;
         height: 150px;
     }
 
 }
+
 /* ESTADIOS RESPONSIVE */
-@media only screen and (max-width:768px) {
-    .contenedor-estadios{
+@media only screen and (max-width:1024px) {
+    .contenedor-estadios {
         display: grid;
         grid-template-columns: auto auto;
         width: 50%;
     }
-    .contenedor-pelota{
+
+    .contenedor-pelota {
         display: grid;
         grid-template-columns: auto auto;
         width: 50%;
     }
-    
 }
-@media only screen and (max-width:390px){
-    .contenedor-estadios{
-        grid-template-columns:auto;
+
+@media only screen and (max-width:768px) {
+    .contenedor-estadios {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 50%;
+    }
+
+    .contenedor-pelota {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width:390px) {
+    .contenedor-estadios {
+        grid-template-columns: auto;
         width: 25%;
     }
-    .titulo-estadios{
+
+    .titulo-estadios {
         font-size: 22px;
     }
-    .contenedor-pelota{
+
+    .contenedor-pelota {
         display: grid;
         grid-template-columns: auto;
         width: 25%;
