@@ -495,7 +495,7 @@ p {
 }
 @media only screen and (max-width:390px) {
     header{
-        width: 25%;
+        width: 100%;
         position: sticky;
         z-index: 100;
         top: -1px;
@@ -577,7 +577,7 @@ p {
     .contenedor-selecciones {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        width: 100%;
+        width: 25%;
     }
 
     .titulo-selecciones {
@@ -622,6 +622,19 @@ p {
     }
 
     .contenedor-pelota {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    body {
+        width: 25%;
+    }
+    header{
+        width: 25%;
+
+    }
+    footer {
         width: 25%;
     }
 }
