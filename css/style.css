@@ -493,6 +493,14 @@ p {
 
     }
 }
+@media only screen and (max-width:390px) {
+    header{
+        width: 25%;
+        position: sticky;
+        z-index: 100;
+        top: -1px;
+    }
+}
 
 /* PIE DE PAGINA RESPONSIEVE */
 @media only screen and (max-width:1024px) {
@@ -527,6 +535,14 @@ p {
 
     .box figure a img {
         width: 100px;
+    }
+}
+@media only screen and (max-width:390px) {
+    .pie-pagina .grupo-1{
+        width: 25%;
+    }
+    .pie-pagina .grupo-2 {
+        width: 25%;
     }
 }
 /* SELECCIONES RESPONSIVE */
@@ -598,7 +614,7 @@ p {
 
 @media only screen and (max-width:390px) {
     .contenedor-estadios {
-        width: 100%;
+        width: 25%;
     }
 
     .titulo-estadios {
@@ -606,6 +622,6 @@ p {
     }
 
     .contenedor-pelota {
-        width: 100%;
+        width: 25%;
     }
 }
