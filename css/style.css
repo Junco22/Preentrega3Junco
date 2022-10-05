@@ -135,7 +135,7 @@ li a:hover {
 
 /* PIE DE PAGINA */
 footer {
-    width: 100%;
+    width: auto;
 }
 .pie-pagina {
     width: 100%;
@@ -501,7 +501,9 @@ p {
         align-items: center;
         justify-content: center;
     }
-
+    .pie-pagina .grupo-2 {
+        width: 100%;
+    }
     .redes {
         display: flex;
         flex-direction: row;
