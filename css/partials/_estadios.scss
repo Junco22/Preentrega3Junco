@@ -1,0 +1,105 @@
+.titulo-estadios {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.contenedor-estadios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-pelota {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.estadios {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+
+    .estadios-front,
+    .estadios-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .estadios-front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px black;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+    }
+
+    .estadios-back {
+        transform: perspective(600px) rotateY(180deg);
+        background-color: #0a141d;
+        color: #f3f3f3;
+        text-align: center;
+        box-shadow: 0 5px 10px black;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        p {
+            letter-spacing: 1px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 25px;
+            letter-spacing: 2px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.estadios:hover .estadios-front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.estadios:hover .estadios-back {
+    transform: perspective(600px) rotateY(360deg);
+}

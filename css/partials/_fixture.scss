@@ -1,0 +1,65 @@
+.titulo-fixture {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.contenedor-grupos {
+    width: 90%;
+    background-color: $maincolor;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    .grupo {
+        width: 100%;
+        text-align: center;
+        grid-column: 1/4;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        p {
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            margin: 10px 10px;
+        }
+        img {
+            margin: 20px;
+        }
+    }
+    .horarios, .partido, .estadio{
+        background-color: $secondarycolor;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px cornsilk;
+    }
+    .horarios {
+     
+        font-size: 32px;
+        color: white;
+    }
+    .partido{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        color: white;
+        font-size: 32px;
+
+        img{
+            border-radius: 25px;
+            border: solid 3px rgb(173, 115, 8);
+        }
+    }
+    .estadio {
+        font-size: 32px;
+        color: white;
+    }
+}

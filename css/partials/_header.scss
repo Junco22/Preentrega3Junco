@@ -1,0 +1,56 @@
+header {
+    width: 100%;
+
+    .menu {
+        background-color: $maincolor;
+        height: 80px;
+        width: 100%;
+        .enlace {
+            position: absolute;
+            padding: 20px 50px;
+        }
+
+        .logo,
+        .titulo-logo {
+            height: 40px;
+        }
+
+        ul {
+            float: right;
+            margin-right: 20px;
+
+            li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+
+                a {
+                    color: white;
+                    font-size: 18px;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: #3498db;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .checkbox {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+    }
+}
